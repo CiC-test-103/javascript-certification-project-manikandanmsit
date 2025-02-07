@@ -7,10 +7,10 @@
  */
 class Student {
   // Private Fields
-  #name               // String(fullname no space in between)
-  #year               // Number
-  #email              // String
-  #specialization     // String(must be written in camelCase)
+  #name; // String(fullname no space in between)
+  #year; // Number
+  #email; // String
+  #specialization; // String(must be written in camelCase)N
 
   /**
    * REQUIRES:  The fields specified above
@@ -57,7 +57,7 @@ class Student {
    * RETURNS:   The student specialization (String)
    */
   getSpecialization() {
-    return this.#specialization; 
+    return this.#specialization;
   }
 
   /**
@@ -66,7 +66,9 @@ class Student {
    * RETURNS:   Student object as string
    */
   getString() {
-    return `Name: ${this.#name}, Year: ${this.#year}, Email: ${this.#email}, Specialization: ${this.#specialization}`;
+    return `Name: ${this.#name}, Year: ${this.#year}, Email: ${
+      this.#email
+    }, Specialization: ${this.#specialization}`;
   }
 
   /**
@@ -88,4 +90,4 @@ class Student {
   }
 }
 
-module.exports = { Student }
+module.exports = { Student };
